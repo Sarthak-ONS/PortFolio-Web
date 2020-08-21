@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: white;
+    background: #0ABDE3;
     padding-bottom: 0px;
     padding-block-end: 0px;
 
@@ -71,14 +71,15 @@ nav a:hover {
 }
 
 .container .logo {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     padding-left: 6rem;
     color: #3dcfd3;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
     border-block: 12;
-    font-size: 36px;
+    font-size: 48px;
     text-decoration-line: underline;
+
 
 }
 
@@ -169,69 +170,137 @@ section.education {
     width: 100%;
     height: 580px;
     margin-top: 0;
-    
+
 
 
 }
 
-section.line-reducer h1{
+section.line-reducer h1 {
     text-align: center;
     font-family: cursive;
     font-size: 48px;
     color: #2B2B52;
     padding: 1rem 1rem;
 }
-section.education p{
+
+section.education p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     padding: 48px 48px;
     text-align: center;
-    
+
 }
-section.education .heading{
+
+section.education .heading {
     text-align: center;
     font-size: 48px;
     color: #3dcfd3;
-    text-decoration-line: underline;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    font-family: 'Signika', sans-serif;
 }
-.project-heading h1{
+
+.project-heading h1 {
     text-align: center;
     color: #2B2B52;
     font-family: cursive;
     font-size: 48px;
 }
 
-section.projects{
+section.projects {
     background-color: black;
     height: 550px;
 }
-section.projects .list{
+
+section.projects .list {
     padding-top: 1rem;
 }
 
-section.projects .list li{
+section.projects .list li {
     list-style-type: none;
     color: aliceblue;
     font-size: 36px;
     text-align: center;
     padding-top: 2rem;
+    font-family: 'Seaweed Script', cursive;
 }
-section.projects .list li:hover{
+
+section.projects .list li:hover {
     color: teal;
     transition: all.6s ease-out;
     cursor: pointer;
 }
 
 
+section.footer .quote {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Cedarville Cursive', cursive;
 
+}
 
+.footer {
+    background: #303036;
+    color: aliceblue;
+}
 
+.quotation {
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 24px;
 
+}
 
+.quotation span {
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
 
+}
 
+/* 
 
+ */
 
+footer {
+    padding: 3px;
+    background-color: black;
+    color: white;
+    display: block;
+    font-size: 24px;
+    text-decoration-line: none;
+}
 
+footer a {
+    text-decoration-line: none;
+    color: wheat;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 42%;
+
+}
+
+footer ul li {
+    justify-items: center;
+    padding-left: 1rem;
+    
+}
+
+footer .icons img {
+    width: 0.5in;
+    height: 0.5in;
+
+}
+footer .icons img:hover{
+    cursor: pointer;
+    
+
+}
+.icons{
+    align-content: center;
+}
