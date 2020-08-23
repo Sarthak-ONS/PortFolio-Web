@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    
+}
+
 body {
     margin: 0;
     background: #0ABDE3;
@@ -39,6 +44,7 @@ header ::after {
 nav {
     float: right;
     height: 5rem;
+    position: sticky;
 }
 
 nav ul {
@@ -57,7 +63,8 @@ nav li {
     font-size: 28px;
     margin: 0;
     font-size: 20px;
-    
+
+
 }
 
 nav li:hover {
@@ -66,6 +73,7 @@ nav li:hover {
     text-decoration-thickness: 10px;
     border-radius: 20px;
     padding-bottom: 1.8rem;
+    
 }
 
 nav a {
@@ -86,14 +94,11 @@ nav a:hover {
 
 .container .logo {
     padding-top: 1.5rem;
-    padding-left: 6rem;
+    padding-left: 9rem;
     color: white;
     font-family: 'Pacifico', cursive;
     font-weight: bold;
-    border-block: 12;
     font-size: 48px;
-
-
 }
 
 
@@ -110,27 +115,23 @@ nav a:hover {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    border-color: #3dcfd3;
     color: aliceblue;
     border-radius: 4px;
-    border: 2px solid transparent;
+    border: 2px solid #0ABDE3;
 }
 
 .container button:hover {
-
-    color: white;
-    border-color: #3dcfd3;
-    border-width: 3px;
+    cursor: pointer;
 }
 
 
-nav a::before {
+/* nav a::before {
     content: '';
     display: block;
     height: 5px;
     width: 100%;
 
-}
+} */
 
 
 section.about {
@@ -139,6 +140,7 @@ section.about {
     align-items: center;
     height: 580px;
     margin-bottom: 0;
+
 }
 
 section.about .left img {
@@ -197,7 +199,7 @@ section.about .right h2 span {
 section.education {
     background-color: black;
     width: 100%;
-    height: 750px;
+    height: auto;
     margin-top: 0;
 }
 
@@ -209,7 +211,7 @@ section.line-reducer h1 {
     padding: 1rem 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
+
 }
 
 section.education p {
@@ -240,7 +242,7 @@ section.education .heading {
 
 section.projects {
     background-color: black;
-    height: 700px;
+    height: auto;
 }
 
 section.projects .list {
@@ -312,7 +314,7 @@ footer a {
 footer ul {
     list-style-type: none;
     display: flex;
-    margin-left: 42%;
+    align-content: center;
 
 }
 
@@ -322,27 +324,23 @@ footer p {
 }
 
 footer ul li {
-    justify-items: center;
-    padding-left: 1rem;
+    padding: 2rem;
+
 
 }
 
 footer .icons img {
     width: 0.5in;
     height: 0.5in;
-
-
+    padding-left: 50%;
 }
 
 footer .icons img:hover {
     cursor: pointer;
-    /* width: 0.7in;
-    height: 0.7in; 
-    this thing just increases size keeping coordinates same
-    */
+
     transform: scale(1.5);
     transition: all .2s ease-in;
-    
+
 }
 
 .icons {
@@ -422,7 +420,7 @@ footer .icons img:hover {
 }
 
 .nav-res-btn {
-    background: #0984a0;
+    background: #161616;
     outline: none;
     border-color: all white;
     border-radius: 8px;
@@ -430,7 +428,8 @@ footer .icons img:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 34px;
     font-weight: bold;
-    border: none;
+    border: 2px solid #0ABDE3;
+    color: white;
 }
 
 .nav-res-btn:hover {
@@ -452,6 +451,12 @@ footer .icons img:hover {
     color: white
 }
 
+.icons-center-try {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 /* 
 Media queries are still to be improved
@@ -462,16 +467,16 @@ these arent suitable for all devices */
         display: none;
     }
 
-    body .hamberger .icon-burger {
+    /* body .hamberger .icon-burger {
         display: none;
-    }
+    } */
 
-} 
+}
 
 @media(min-width:1216px) {
-    .hamberger {
+    /* .hamberger {
         display: none;
-    }
+    } */
 
     .res-nav {
         display: none;
@@ -483,4 +488,15 @@ these arent suitable for all devices */
     section.about .right p {
         padding-right: 0;
     }
+}
+
+@media (max-width:1024px) {
+    section.about {
+        height: auto;
+    }
+
+    section.education {
+        height: auto;
+    }
+    
 }
